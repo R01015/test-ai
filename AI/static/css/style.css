@@ -1,0 +1,185 @@
+body {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    overflow: hidden;
+}
+
+#title h1 {
+    font-weight: bold;
+    font-size: 100px;
+    background: linear-gradient(to right,#00e1ff,#1c109f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: 'MS Sans Serif';
+}
+
+#title p {
+    font-size: 25px;
+    text-align: center;
+    margin-top: -90px;
+    margin-left: 215px;
+    font-weight: bold;
+    color: rgb(42, 171, 232);
+    text-shadow: 1px 1px 3px rgba(42, 172, 232, 0.521);
+}
+
+#user-input {
+    background-color: rgb(30, 30, 30);
+    height: 70px;
+    width: 170%;
+    border: none;
+    border-radius: 100px;
+    padding: 1px;
+    padding-left: 10px;
+    box-shadow: 1px 1px 5px black;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+#send-btn, #clear-btn {
+    height: 53px;
+    width: 53px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#send-btn {
+    background-image: url("/static/image/ueyajirusi.png");
+    background-color: rgb(255, 255, 255);
+}
+
+#send-btn:hover {
+    background-color: #ffffffd4;
+}
+
+#clear-btn {
+    background-image: url("/static/image/gomibako-removebg-preview.png");
+    background-color: rgb(234, 19, 19);
+}
+
+#clear-btn:hover {
+    background-color: rgba(234, 19, 19, 0.674);
+}
+
+#btn-group {
+    display: flex;
+    position: relative;
+    gap: 15px;
+    left: 233px;
+    bottom: 63px;
+}
+
+#input-box {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+}
+
+#chat-history {
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 30, 30);
+    height: 500px;
+    width: 300px;
+    left: 30px;
+    border: none;
+    border-radius: 15px; 
+    padding: 10px; 
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.485);
+    overflow-y: scroll;
+    scrollbar-color: #6c6c6c rgb(30, 30, 30);
+}
+
+#status {
+    font-size: small;
+    text-align: center;
+}
+
+#warning {
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.ai {
+    
+}
+
+.user {
+    position: relative;
+    display: inline-block;
+    margin: 1.3em 0;
+    padding: 15px;
+    background-color: #131313;
+    border-radius: 17px;
+}
+
+.user::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    margin-top: -10px;
+    border: 10px solid transparent;
+}
+
+.copyright {
+    font-size: small;
+    color: rgb(93, 93, 93);
+    position: absolute;
+    left: 30%;
+    top: 97%;
+}
+
+.copybtn {
+    margin-left: 10px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 769px){
+    #input-box {
+        left: 30%;
+        top: 35%;
+    }
+    
+    #user-input {
+        width: 653px;
+        height: 50px;
+    }
+
+    #btn-group {
+        left: 563px;
+        bottom: 47px;
+    }
+
+    #send-btn, #clear-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
+    }
+
+    #chat-history {
+        left: 523px;
+        width: 500px;
+    }
+
+    .copyright {
+        left: 45%;
+        top: 95%;
+    }
+
+    body {
+        background-color: rgb(23, 23, 23);
+    }
+}
